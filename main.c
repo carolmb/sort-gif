@@ -6,9 +6,9 @@
 	os valores e chama a função de ordenação. Também recebe
 	M que será usado para definir o tamanho do gif.
 
-	Dentro da função de ordenação além de ordenar, também
-	é criado um gif, a cada momento que o swap é chamado
-	também é chamada função para adicionar um frame ao gif.
+	Dentro da função de ordenação, além de ordenar, também é 
+	criado um gif, sempre que swap é chamado, logo em seguida 
+	adiciona-se um novo frame ao gif com o estado atual do vetor.
 
 	O resultado é um gif (dimensão MxM) que pega uma sequência 
 	de cores desordenada e a ordena para formar o espectro de cores.
@@ -193,12 +193,10 @@ void swap(int *v, int i, int j) {
 */
 void sort(int *values, int n, int m) {
 	ge_GIF *gif = creat_gif(m,"out.gif"); // exemplo de má prática de programação :(
-	int count = 0;
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < n; j++) {
 			if (values[i] > values[j]) {
 				swap(values,i,j);
-				count ++;
 				add_frame(gif,values,n,m);
 			}
 		}
