@@ -28,6 +28,7 @@ de execução, programa fica bem lento (a visualização
 final também).
 
 Exemplo de gif gerado com N = 50 e M = 100:
+
 ![](out.gif)
 
 Foi utilizado o projeto [gifenc](https://github.com/lecram/gifenc). 
