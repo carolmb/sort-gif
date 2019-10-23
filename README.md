@@ -14,6 +14,7 @@ de cores desordenada e a ordena para formar o espectro de cores.
 Para usar o programa usar os seguintes comandos:
 
 > make all
+
 > make run
 
 O programa espera que seja inserido um inteiro positivo que
