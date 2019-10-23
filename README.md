@@ -4,9 +4,9 @@ Programa recebe um inteiro N, cria um vetor com N
 elementos variando de 0 a N-1, posteriormente embaralha
 os valores e chama a função de ordenação. 
 
-Dentro da função de ordenação além de ordenar, também
-é criado um gif, a cada momento que o swap é chamado
-também é chamada função para adicionar um frame.
+Dentro da função de ordenação, além de ordenar, também
+é criado um gif, sempre que swap é chamado, logo em seguida
+adiciona-se um novo frame ao gif com o estado atual do vetor.
 
 O resultado é um gif (dimensão NxN) que pega uma sequência 
 de cores desordenada e a ordena para formar o espectro de cores.
